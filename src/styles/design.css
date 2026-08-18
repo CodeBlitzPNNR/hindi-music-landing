@@ -1,0 +1,91 @@
+/* ============================================================
+   DESIGN FILE
+   Edit this file to change the site's colors and fonts.
+   Nothing else in the project needs to change — every component
+   reads its color/font/spacing from the variables defined here.
+   ============================================================ */
+
+/* ---- 1. Fonts -------------------------------------------------
+   Swap the Google Fonts import + the two font stacks below to
+   change the typefaces everywhere on the site.
+   --font-heading is used for all headings and buttons.
+   --font-body is used for paragraphs, nav links, labels, etc.
+------------------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo:wght@400&family=Figtree:wght@400;600;700&display=swap');
+
+:root {
+  --font-heading: "Caprasimo", system-ui, sans-serif;
+  --font-heading-weight: 400;
+  --font-body: "Figtree", system-ui, sans-serif;
+}
+
+/* ---- 2. Colors --------------------------------------------------
+   Base palette (background / surface / text) and two accent
+   colors, each with a light→dark ramp (100 = lightest, 900 =
+   darkest). Change the base hex values and, if you want, regenerate
+   the ramp steps to match — an easy way is to pick a color, then
+   nudge lightness up for 100-300 and down for 700-900.
+------------------------------------------------------------- */
+:root {
+  --color-bg: #f2e2bd;
+  --color-surface: #ead4a8;
+  --color-text: #211c16;
+
+  /* Accent 1 — primary buttons, links, headings-on-tint */
+  --color-accent: #c81e6b;
+  --color-accent-100: #fbe6ef;
+  --color-accent-200: #f4c1da;
+  --color-accent-300: #e88fbc;
+  --color-accent-400: #da5a98;
+  --color-accent-500: #c81e6b;
+  --color-accent-600: #a5175a;
+  --color-accent-700: #7e1246;
+  --color-accent-800: #560d30;
+  --color-accent-900: #33071c;
+
+  /* Accent 2 — the second voice (tinted panels, quote color) */
+  --color-accent-2: #1f6b63;
+  --color-accent-2-100: #e5f1ee;
+  --color-accent-2-200: #c1e0d9;
+  --color-accent-2-300: #8fc7ba;
+  --color-accent-2-400: #57a596;
+  --color-accent-2-500: #1f6b63;
+  --color-accent-2-600: #185650;
+  --color-accent-2-700: #12403c;
+  --color-accent-2-800: #0b2b28;
+  --color-accent-2-900: #061615;
+
+  /* Gold — used for the full-bleed section buttons/kickers */
+  --color-gold: #d9a52a;
+  --color-gold-100: #f9edcf;
+  --color-gold-700: #8a6413;
+
+  --color-divider: color-mix(in srgb, #211c16 16%, transparent);
+}
+
+/* ============================================================
+   Everything below is layout plumbing (spacing / radius / shadow
+   tokens). Safe defaults — change only if you want a different
+   density or roundness across the whole site.
+   ============================================================ */
+:root {
+  --space-1: 4.4px;
+  --space-2: 8.8px;
+  --space-3: 13.2px;
+  --space-4: 17.6px;
+  --space-6: 26.4px;
+  --space-8: 35.2px;
+
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 28px;
+
+  --shadow-sm: 0 1px 2px color-mix(in srgb, #2e2b25 14%, transparent);
+  --shadow-md: 0 3px 10px color-mix(in srgb, #2e2b25 16%, transparent);
+  --shadow-lg: 0 12px 32px color-mix(in srgb, #2e2b25 22%, transparent);
+
+  --leading: 28px;
+  --half: 14px;
+  --edge: clamp(20px, 5vw, 72px);
+  --measure: 58ch;
+}

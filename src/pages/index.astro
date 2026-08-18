@@ -1,0 +1,440 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ImagePlaceholder from '../components/ImagePlaceholder.astro';
+---
+
+<Layout title="Ayo Edebiri — Música clásica hindú">
+  <nav class="nav">
+    <span class="nav-brand">Ayo Edebiri</span>
+    <a href="#sobre-mi">Sobre mí</a>
+    <a href="#filosofia">Enseñanza</a>
+    <a href="#clases">Clases</a>
+    <a href="#contacto">Contacto</a>
+    <button type="button" class="btn btn-primary" onclick="window.open('https://wa.me/000000000','_blank')">Escribir por WhatsApp</button>
+  </nav>
+
+  <div class="wrap">
+    <section class="hero">
+      <div class="hero-grid">
+        <div data-reveal>
+          <span class="kicker">Música clásica hindú</span>
+          <h1 class="display"><span class="line">Aprende a escuchar.</span> <span class="line">Aprende a tocar.</span></h1>
+          <p class="sub">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, ut enim ad minim veniam quis nostrud exercitation.</p>
+          <div class="row">
+            <button type="button" class="btn btn-primary" onclick="window.open('https://wa.me/000000000','_blank')">Reservar una clase</button>
+            <a href="#sobre-mi" class="btn btn-ghost">Conocer más</a>
+          </div>
+        </div>
+        <figure class="hero-figure washed" data-reveal>
+          <ImagePlaceholder src="/images/hero-ph.jpg" alt="Foto de la profesora" placeholder="Foto de la profesora" ratio="4 / 5" />
+        </figure>
+      </div>
+    </section>
+  </div>
+
+  <section class="showcase showcase-left">
+    <div class="showcase-bg" data-parallax>
+      <ImagePlaceholder src="/images/bg-ph-right1.jpg" alt="Imagen de fondo: sitar o instrumento tradicional" placeholder="Imagen de fondo: sitar o instrumento tradicional" fill />
+    </div>
+    <div class="showcase-veil"></div>
+    <div class="showcase-content" data-reveal>
+      <span class="kicker">Lorem ipsum</span>
+      <h2>Lorem ipsum dolor sit amet consectetur</h2>
+      <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, ut enim ad minim veniam quis nostrud exercitation.</p>
+      <div class="row"><button type="button" class="btn btn-gold" onclick="window.open('https://wa.me/000000000','_blank')">Lorem ipsum</button></div>
+    </div>
+  </section>
+
+  <section class="showcase showcase-right">
+    <div class="showcase-bg" data-parallax>
+      <ImagePlaceholder src="/images/bg-ph-left1.jpg" alt="Imagen de fondo: clase grupal" placeholder="Imagen de fondo: clase grupal" fill />
+    </div>
+    <div class="showcase-veil"></div>
+    <div class="showcase-content" data-reveal>
+      <span class="kicker">Lorem ipsum</span>
+      <h2>Ut enim ad minim veniam quis nostrud</h2>
+      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      <div class="row"><button type="button" class="btn btn-gold" onclick="window.open('https://wa.me/000000000','_blank')">Lorem ipsum</button></div>
+    </div>
+  </section>
+
+  <section class="showcase showcase-left">
+    <div class="showcase-bg" data-parallax>
+      <ImagePlaceholder src="/images/bg-ph-right2.jpg" alt="Imagen de fondo: mantra o meditación" placeholder="Imagen de fondo: mantra o meditación" fill />
+    </div>
+    <div class="showcase-veil"></div>
+    <div class="showcase-content" data-reveal>
+      <span class="kicker">Lorem ipsum</span>
+      <h2>Excepteur sint occaecat cupidatat non</h2>
+      <p>Proident, sunt in culpa qui officia deserunt mollit anim id est laborum lorem ipsum dolor sit amet.</p>
+      <div class="row"><button type="button" class="btn btn-gold" onclick="window.open('https://wa.me/000000000','_blank')">Lorem ipsum</button></div>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <section class="split" id="sobre-mi">
+      <figure class="split-figure washed" data-reveal>
+        <ImagePlaceholder src="/images/about-ph.jpg" alt="Foto de la profesora" placeholder="Foto de la profesora" ratio="4 / 5" />
+      </figure>
+      <div class="split-copy" data-reveal>
+        <span class="kicker">Sobre la profesora</span>
+        <h2 class="split-title">Ayo Edebiri</h2>
+        <p class="note">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <ul class="credentials">
+          <li>Lorem ipsum dolor sit amet consectetur</li>
+          <li>Adipiscing elit sed do eiusmod tempor</li>
+          <li>Incididunt ut labore et dolore magna aliqua</li>
+        </ul>
+        <div class="player" role="list" aria-label="Grabaciones">
+          <button type="button" class="player-track" data-audio="/audio/track-1.mp3" data-duration="134">
+            <span class="player-play">▶</span>
+            <span class="player-meta"><span class="player-title">Lorem ipsum I</span><span class="player-bar"><span class="player-fill"></span></span></span>
+            <span class="player-time">2:14</span>
+          </button>
+          <button type="button" class="player-track" data-audio="/audio/track-2.mp3" data-duration="187">
+            <span class="player-play">▶</span>
+            <span class="player-meta"><span class="player-title">Lorem ipsum II</span><span class="player-bar"><span class="player-fill"></span></span></span>
+            <span class="player-time">3:07</span>
+          </button>
+          <button type="button" class="player-track" data-audio="/audio/track-3.mp3" data-duration="159">
+            <span class="player-play">▶</span>
+            <span class="player-meta"><span class="player-title">Lorem ipsum III</span><span class="player-bar"><span class="player-fill"></span></span></span>
+            <span class="player-time">2:39</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="parallax" id="filosofia">
+      <div class="parallax-bg" data-parallax>
+        <ImagePlaceholder src="/images/filosofy-ph.jpg" alt="Imagen de fondo: clase o instrumento" placeholder="Imagen de fondo: clase o instrumento" fill />
+      </div>
+      <div class="parallax-veil"></div>
+      <div class="parallax-content" data-reveal>
+        <span class="kicker">Filosofía de enseñanza</span>
+        <h2>Lorem ipsum dolor sit amet consectetur</h2>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+        <div class="row">
+          <button type="button" class="btn btn-primary" onclick="window.open('https://wa.me/000000000','_blank')">Consultar disponibilidad</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="programs" id="clases">
+      <span class="kicker">Clases y programas</span>
+      <h2 class="split-title">Lorem ipsum dolor sit amet</h2>
+      <div class="cards-grid">
+        <div class="prog-card" data-reveal>
+          <h3>Clases individuales</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+          <a href="#contacto">Más información →</a>
+        </div>
+        <div class="prog-card" data-reveal>
+          <h3>Clases grupales</h3>
+          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+          <a href="#contacto">Más información →</a>
+        </div>
+        <div class="prog-card" data-reveal>
+          <h3>Talleres intensivos</h3>
+          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          <a href="#contacto">Más información →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="quote">
+      <figure data-reveal>
+        <blockquote>&ldquo;Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt.&rdquo;</blockquote>
+        <figcaption>— Alumna, tercer año de estudio</figcaption>
+      </figure>
+    </section>
+
+    <section class="close" id="contacto">
+      <div class="patch" data-reveal>
+        <h3>Escribime y coordinamos tu primera clase</h3>
+        <p class="sub">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <div class="signup">
+          <input class="input" type="email" placeholder="tu@email.com" aria-label="Correo electrónico" />
+          <button type="button" class="btn btn-primary" onclick="window.open('https://wa.me/000000000','_blank')">Escribir por WhatsApp</button>
+        </div>
+        <div class="close-links">
+          <a class="btn btn-ghost" href="#" style="padding-inline:0">Suscribirse a novedades</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <span>© 2026 Ayo Edebiri. Todos los derechos reservados.</span>
+      <div class="social">
+        <a href="#" target="_blank" rel="noopener">Instagram</a>
+        <a href="#" target="_blank" rel="noopener">YouTube</a>
+        <a href="#" target="_blank" rel="noopener">Spotify</a>
+      </div>
+    </footer>
+  </div>
+
+  <audio id="player-audio" preload="none"></audio>
+</Layout>
+
+<style>
+.wrap { max-width: 1200px; margin: 0 auto; padding: 0 var(--edge); }
+.nav { padding-inline: max(var(--edge), calc((100% - 1200px) / 2 + var(--edge))); }
+.nav a { white-space: nowrap; }
+@media (max-width: 560px) { .nav a { display: none; } }
+
+.kicker {
+  display: block; font-size: 13px; line-height: var(--half);
+  letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600;
+  color: var(--color-accent-700);
+  margin: 0 0 calc(var(--leading) - var(--half));
+}
+
+/* — entrance animations: subtle fade + rise (text/cards) or fade + scale
+   (framed photos) the first time each element scrolls into view — */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+[data-reveal].in-view { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) { [data-reveal] { transition: none; } }
+
+/* — hero — */
+.hero { position: relative; padding: calc(4 * var(--leading)) 0 calc(3 * var(--leading)); }
+.hero::before { content: ""; position: absolute; right: -180px; top: -220px;
+  width: 420px; height: 420px; border-radius: 50%;
+  background: var(--color-accent-2-200); pointer-events: none; z-index: -1; }
+@media (max-width: 1420px) { .hero::before { right: 0; } }
+
+.display {
+  font-family: var(--font-heading); font-weight: var(--font-heading-weight);
+  font-size: clamp(40px, 5.8vw, 76px);
+  line-height: clamp(43px, 6.26vw, 82px);
+  letter-spacing: 0; margin: 0; margin-left: -0.028em;
+  text-box: trim-both cap alphabetic;
+}
+.display .line { display: block; }
+.hero .sub { font-size: 17px; line-height: var(--leading); max-width: var(--measure);
+  margin: calc(1.5 * var(--leading) - 1cap) 0 0;
+  color: color-mix(in srgb, var(--color-text) 78%, transparent);
+  text-box: trim-both cap alphabetic; }
+.hero .row { display: flex; gap: var(--space-3); flex-wrap: wrap; margin-top: var(--leading); }
+.hero-grid { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+  gap: var(--leading) clamp(24px, 5vw, 64px); align-items: center; }
+.hero-figure { margin: 0; width: 100%; max-width: 380px; justify-self: end;
+  border-radius: calc(2 * var(--radius-lg)); overflow: hidden;
+  transform: rotate(2deg); box-shadow: var(--shadow-lg); }
+.hero-figure[data-reveal] { opacity: 0; transform: rotate(2deg) scale(0.94); }
+.hero-figure[data-reveal].in-view { opacity: 1; transform: rotate(2deg) scale(1); }
+@media (max-width: 880px) {
+  .hero-grid { grid-template-columns: 1fr; }
+  .hero-figure { max-width: 300px; justify-self: center; margin-top: var(--half); }
+}
+
+/* — full-bleed showcase (course-style panels, alternating sides) — */
+.showcase { position: relative; min-height: 620px; display: flex; align-items: center;
+  overflow: hidden; }
+.showcase-bg { position: absolute; inset: -20% 0; z-index: 0; will-change: transform; opacity: 0.5; }
+.showcase-veil { position: absolute; inset: 0; z-index: 1; pointer-events: none;
+  background: linear-gradient(180deg, color-mix(in srgb, var(--color-accent-2-900) 90%, transparent),
+    color-mix(in srgb, var(--color-accent-2-900) 78%, transparent)); }
+.showcase-content { position: relative; z-index: 2; max-width: 560px;
+  padding: calc(3 * var(--leading)) clamp(24px, 6vw, 88px);
+  opacity: 0; transform: translateY(36px); transition: opacity 0.9s ease, transform 0.9s ease; }
+.showcase-content.in-view { opacity: 1; transform: translateY(0); }
+.showcase-left .showcase-content { margin-right: auto; }
+.showcase-right .showcase-content { margin-left: auto; }
+.showcase-content .kicker { color: var(--color-gold); }
+.showcase-content h2 { font-family: var(--font-heading); font-weight: var(--font-heading-weight);
+  font-size: clamp(28px, 3.4vw, 44px); line-height: 1.15; margin: 0; color: #fdf6ec;
+  text-box: trim-both cap alphabetic; }
+.showcase-content p { font-size: 16px; line-height: var(--leading); color: #f2e6d3;
+  margin: calc(var(--leading) - 1cap) 0 0; text-box: trim-both cap alphabetic; }
+.showcase-content .row { margin-top: var(--leading); }
+@media (prefers-reduced-motion: reduce) { .showcase-content { transition: none; opacity: 1; transform: none; } }
+@media (max-width: 720px) { .showcase { min-height: 460px; } .showcase-content { max-width: 100%; padding: calc(2 * var(--leading)) 24px; } }
+
+/* — imagery split (bio) — */
+.split { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+  gap: var(--leading) clamp(24px, 5vw, 96px); align-items: center;
+  padding: calc(2 * var(--leading)) 0 calc(3 * var(--leading)); }
+.split-title { font-family: var(--font-heading); font-weight: var(--font-heading-weight);
+  font-size: 32px; line-height: calc(1.5 * var(--leading));
+  margin: 0; text-box: trim-both cap alphabetic; }
+.split-copy .note { font-size: 15.5px; line-height: var(--leading);
+  color: color-mix(in srgb, var(--color-text) 78%, transparent);
+  margin: calc(var(--leading) - 1cap) 0 0; max-width: 48ch; text-box: trim-both cap alphabetic; }
+.split-figure { margin: 0; width: 100%; justify-self: center;
+  border-radius: calc(2 * var(--radius-lg)); overflow: hidden; }
+.split-figure[data-reveal] { opacity: 0; transform: scale(0.94); }
+.split-figure[data-reveal].in-view { opacity: 1; transform: scale(1); }
+.credentials { list-style: none; margin: var(--leading) 0 0; padding: 0;
+  display: grid; gap: var(--half); }
+.credentials li { display: flex; align-items: baseline; gap: 10px;
+  font-size: 14.5px; line-height: var(--half); color: color-mix(in srgb, var(--color-text) 82%, transparent); }
+.credentials li::before { content: ""; width: 8px; height: 8px; border-radius: 50%;
+  background: var(--color-gold); flex: none; transform: translateY(-2px); }
+
+/* — mini reproductor — */
+.player { background: var(--color-surface); border-radius: var(--radius-lg);
+  padding: var(--half) var(--space-3); margin-top: var(--leading); max-width: 380px; }
+.player-track { display: flex; align-items: center; gap: 10px; padding: 8px 4px;
+  border-radius: var(--radius-md); cursor: pointer; border: none; background: none; width: 100%;
+  font: inherit; text-align: left; }
+.player-track:hover { background: color-mix(in srgb, var(--color-text) 6%, transparent); }
+.player-play { flex: none; width: 30px; height: 30px; border-radius: 50%; border: none;
+  background: var(--color-accent); color: var(--color-bg); display: grid; place-content: center;
+  font-size: 11px; cursor: pointer; }
+.player-track.is-playing .player-play { background: var(--color-accent-2); }
+.player-meta { flex: 1; min-width: 0; }
+.player-title { display: block; font-size: 13.5px; font-weight: 600; line-height: 1.3;
+  color: var(--color-text); }
+.player-bar { height: 3px; border-radius: 2px; background: var(--color-divider); margin-top: 5px; overflow: hidden; }
+.player-fill { height: 100%; width: 0%; background: var(--color-accent-2); transition: width 0.2s linear; }
+.player-track.is-playing .player-fill { background: var(--color-accent); }
+.player-time { flex: none; font-size: 11.5px; color: color-mix(in srgb, var(--color-text) 60%, transparent); }
+
+/* — parallax full-bleed section — */
+.parallax { position: relative; margin: calc(2 * var(--leading)) 0; min-height: 560px;
+  display: flex; align-items: center; overflow: hidden;
+  border-radius: var(--radius-lg); }
+.parallax-bg { position: absolute; inset: -20% 0; z-index: 0; will-change: transform; opacity: 0.5; }
+.parallax-veil { position: absolute; inset: 0; z-index: 1; pointer-events: none;
+  background: linear-gradient(180deg, color-mix(in srgb, var(--color-accent-2-900) 92%, transparent),
+    color-mix(in srgb, var(--color-accent-2-900) 82%, transparent)); }
+.parallax-content { position: relative; z-index: 2; padding: calc(3.5 * var(--leading)) clamp(24px, 6vw, 88px);
+  max-width: 620px; opacity: 0; transform: translateY(36px); transition: opacity 0.9s ease, transform 0.9s ease; }
+.parallax-content.in-view { opacity: 1; transform: translateY(0); }
+.parallax-content .kicker { color: var(--color-gold); }
+.parallax-content h2 { font-family: var(--font-heading); font-weight: var(--font-heading-weight);
+  font-size: clamp(30px, 3.6vw, 46px); line-height: 1.15; margin: 0; color: #fdf6ec;
+  text-box: trim-both cap alphabetic; }
+.parallax-content p { font-size: 16.5px; line-height: var(--leading); color: #f2e6d3;
+  max-width: 50ch; margin: calc(var(--leading) - 1cap) 0 0; text-box: trim-both cap alphabetic; }
+.parallax-content .row { margin-top: var(--leading); }
+@media (prefers-reduced-motion: reduce) { .parallax-content { transition: none; opacity: 1; transform: none; } }
+@media (max-width: 720px) { .parallax { min-height: 460px; } .parallax-content { padding: calc(2.5 * var(--leading)) 24px; } }
+
+/* — clases / cards — */
+.programs { padding: calc(2.5 * var(--leading)) 0 calc(1 * var(--leading)); }
+.cards-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(16px, 2.5vw, 28px); margin-top: var(--leading); }
+.prog-card { background: var(--color-surface); border-radius: var(--radius-lg);
+  padding: calc(1.5 * var(--leading)) var(--space-4); display: flex; flex-direction: column; gap: var(--half); }
+.prog-card h3 { font-family: var(--font-heading); font-weight: var(--font-heading-weight);
+  font-size: 22px; line-height: var(--leading); margin: 0; text-box: trim-both cap alphabetic; }
+.prog-card p { font-size: 15px; line-height: var(--leading); margin: 0;
+  color: color-mix(in srgb, var(--color-text) 78%, transparent); flex: 1; }
+.prog-card a { font-size: 14px; font-weight: 600; color: var(--color-accent-700); text-decoration: none; }
+.prog-card a:hover { color: var(--color-accent-900); text-decoration: underline; }
+.prog-card:nth-child(2) { transition-delay: 0.08s; }
+.prog-card:nth-child(3) { transition-delay: 0.16s; }
+@media (max-width: 880px) { .cards-grid { grid-template-columns: 1fr; } }
+
+/* — quote — */
+.quote { padding: calc(2.5 * var(--leading)) 0 calc(3 * var(--leading)); text-align: center; }
+.quote blockquote {
+  font-family: var(--font-heading); font-weight: var(--font-heading-weight);
+  font-size: clamp(24px, 2.6vw, 34px); line-height: calc(1.5 * var(--leading));
+  max-width: 42ch; margin: 0 auto; color: var(--color-accent-700);
+  text-box: trim-both cap alphabetic;
+}
+.quote figcaption { font-size: 15.5px; line-height: var(--leading);
+  color: color-mix(in srgb, var(--color-text) 70%, transparent);
+  margin: calc(2 * var(--leading) - 1cap) 0 0; text-box: trim-both cap alphabetic; }
+
+/* — close / contacto — */
+.close { padding: 0 0 calc(2 * var(--leading)); }
+.patch { background: var(--color-accent-2-100);
+  border-radius: calc(2 * var(--radius-lg));
+  padding: calc(2 * var(--leading)) clamp(24px, 4vw, 64px); }
+.patch h3 { font-family: var(--font-heading); font-weight: var(--font-heading-weight);
+  font-size: 26px; line-height: var(--leading); margin: 0; text-box: trim-both cap alphabetic; }
+.patch .sub { font-size: 15.5px; line-height: var(--leading);
+  color: color-mix(in srgb, var(--color-text) 78%, transparent);
+  margin: calc(var(--leading) - 1cap) 0 0; max-width: var(--measure); text-box: trim-both cap alphabetic; }
+.signup { display: flex; gap: var(--space-3); align-items: stretch; max-width: 480px;
+  margin-top: var(--leading); flex-wrap: wrap; }
+.signup .input { flex: 1; min-width: 180px; }
+.signup .input, .signup .btn { min-height: 36px; }
+.close-links { display: flex; gap: var(--space-3); margin-top: var(--half); }
+
+footer { padding: calc(2 * var(--leading)) 0; display: flex; justify-content: space-between;
+  align-items: center; gap: var(--leading); flex-wrap: wrap;
+  font-size: 13px; line-height: var(--leading);
+  color: color-mix(in srgb, var(--color-text) 70%, transparent); }
+.social { display: flex; gap: var(--space-3); }
+.social a { color: var(--color-accent-700); text-decoration: none; font-weight: 600; }
+.social a:hover { color: var(--color-accent-900); text-decoration: underline; }
+
+@media (max-width: 720px) {
+  .hero { padding-top: calc(2.5 * var(--leading)); }
+  .hero::before { width: 280px; height: 280px; top: -160px; }
+  .split { grid-template-columns: 1fr; }
+  .split-figure { justify-self: start; max-width: 340px; }
+}
+</style>
+
+<script>
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const reveals = document.querySelectorAll('[data-reveal]');
+  if (reduce) {
+    reveals.forEach((el) => el.classList.add('in-view'));
+  } else {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in-view'); io.unobserve(e.target); } });
+    }, { threshold: 0.3 });
+    reveals.forEach((el) => io.observe(el));
+  }
+
+  const bgs = document.querySelectorAll('[data-parallax]');
+  if (bgs.length && !reduce) {
+    let ticking = false;
+    const update = () => {
+      const vh = innerHeight || 800;
+      bgs.forEach((bg) => {
+        const section = bg.closest('.parallax, .showcase');
+        if (!section) return;
+        const r = section.getBoundingClientRect();
+        const progress = (vh - r.top) / (vh + r.height);
+        const shift = (Math.min(Math.max(progress, 0), 1) - 0.5) * 180;
+        (bg as HTMLElement).style.transform = `translateY(${shift}px)`;
+      });
+      ticking = false;
+    };
+    addEventListener('scroll', () => { if (!ticking) { requestAnimationFrame(update); ticking = true; } }, { passive: true });
+    update();
+  }
+
+  const audio = document.getElementById('player-audio') as HTMLAudioElement | null;
+  const tracks = document.querySelectorAll<HTMLButtonElement>('.player-track');
+  let current: HTMLButtonElement | null = null;
+  const reset = (t: HTMLButtonElement) => {
+    t.classList.remove('is-playing');
+    t.querySelector('.player-play')!.textContent = '▶';
+    (t.querySelector('.player-fill') as HTMLElement).style.width = '0%';
+  };
+  if (audio) {
+    tracks.forEach((t) => {
+      t.addEventListener('click', () => {
+        if (current === t && !audio.paused) { audio.pause(); return; }
+        if (current && current !== t) reset(current);
+        current = t;
+        audio.src = t.dataset.audio ?? '';
+        audio.play().catch(() => {});
+      });
+    });
+    audio.addEventListener('play', () => {
+      if (current) { current.classList.add('is-playing'); current.querySelector('.player-play')!.textContent = '❚❚'; }
+    });
+    audio.addEventListener('pause', () => {
+      if (current) { current.querySelector('.player-play')!.textContent = '▶'; current.classList.remove('is-playing'); }
+    });
+    audio.addEventListener('timeupdate', () => {
+      if (current && audio.duration) {
+        (current.querySelector('.player-fill') as HTMLElement).style.width = (audio.currentTime / audio.duration * 100) + '%';
+      }
+    });
+    audio.addEventListener('ended', () => { if (current) reset(current); });
+  }
+</script>
